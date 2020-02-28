@@ -1,18 +1,18 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-primary">
 
   <div class="container">
-  <a class="navbar-brand" href="#">Dating App</a>
+  <a class="navbar-brand"[routerLink]="['/home']">Dating App</a>
 
     <!--Links-->
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Matches</a>
+      <li class="nav-item"  routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/members']">Matches</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Lists</a>
+      <li class="nav-item"  routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/lists']">Lists</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link " href="#">Messages</a>
+      <li class="nav-item"  routerLinkActive="active">
+        <a class="nav-link " [routerLink]="['/messages']">Messages</a>
       </li>
     </ul>
 
@@ -33,7 +33,7 @@
     <form *ngIf="!loggedIn()" #loginForm="ngForm" class="form-inline my-2 my-lg-0" (ngSubmit)="login()">
       <input class="form-control mr-sm-2" type="text" name="username" placeholder="Username" required [(ngModel)]="model.username">
       <input class="form-control mr-sm-2" type="password" name="password" placeholder="Password" required [(ngModel)]="model.password">
-      <button [disabled]="!loginForm.valid" class="btn btn-warning my-2 my-sm-0" type="submit">Login</button>
+      <button [disabled]="!loginForm.valid" class="btn login-btn btn-warning my-2 my-sm-0" type="submit">Login</button>
     </form>
   </div>
 
