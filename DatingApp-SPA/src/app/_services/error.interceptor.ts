@@ -12,7 +12,7 @@ export class ErrorInterceptor implements HttpInterceptor {
     return next.handle(req).pipe(
       catchError(error => {
         if (error.status === 401) {
-          return throwError(error.status);
+          return throwError(error.statusText);
         }
 
         // Application Errors - 500 type errors
