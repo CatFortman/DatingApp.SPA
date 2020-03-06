@@ -1,3 +1,36 @@
-<p>
- {{user?.knownAs}}
-</p>
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="{{user.photoUrl}}" alt="{{user.knownAs}}" class="card-img-top img-thumbnail">
+        <div class="card-body">
+          <div>
+            <strong>Location: </strong>
+            <p>{{user?.city}}, {{user?.country}}</p>
+          </div>
+          <div>
+            <strong>Age: </strong>
+            <p>{{user?.age}}</p>
+          </div>
+          <div>
+            <strong>Last Active: </strong>
+            <p>{{user?.lastActive}}</p>
+          </div>
+          <div>
+            <strong>Member Since: </strong>
+            <p>{{user?.created}}</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="btn-group d-flex">
+            <button class="btn btn-secondary w-100">Like</button>
+            <button class="btn btn-info w-100">Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-8">
+
+    </div>
+  </div>
+</div>
