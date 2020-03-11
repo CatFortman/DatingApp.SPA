@@ -2,7 +2,9 @@
   <div class="row">
     <div class="col-sm-4">
       <div class="card">
-        <img src="{{user.photoUrl}}" alt="{{user.knownAs}}" class="card-img-top img-thumbnail">
+        <div class="img-container mt-2 mb-3">
+          <img src="{{user?.photoUrl}}" alt="{{user?.knownAs}}" class="img-profile">
+        </div>
         <div class="card-body">
           <div>
             <strong>Location: </strong>
@@ -22,7 +24,7 @@
           </div>
         </div>
         <div class="card-footer">
-          <div class="btn-group d-flex">
+          <div class="btn-group btn-group-justified d-flex">
             <button class="btn btn-secondary w-100">Like</button>
             <button class="btn btn-info w-100">Message</button>
           </div>
@@ -31,7 +33,7 @@
     </div>
     <div class="col-sm-8">
       <div class="tab-panel">
-        <tabset>
+        <tabset class="member-tabset">
           <tab heading="About {{user?.knownAs}}">
             <h4>Description</h4>
             <p>{{user?.introduction}}</p>

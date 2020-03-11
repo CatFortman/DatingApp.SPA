@@ -1,0 +1,32 @@
+.img-profile{
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+
+}
+
+.img-container{
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  border: 4px solid rgb(120, 194, 173, 0.4);
+  margin-right:auto;
+  margin-left: auto;
+}
+
+
+.card-body{
+  padding: 0 25px;
+}
+
+.card-footer{
+  padding: 10px 15px;
+  background-color: #fff;
+  border-top: none;
+}
