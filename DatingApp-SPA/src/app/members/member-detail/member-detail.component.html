@@ -1,11 +1,16 @@
 <div class="container mt-4">
+  <div class="row mb-2">
+    <div class="col-sm-6">
+      <h1>{{user.knownAs}}'s Profile</h1>
+    </div>
+  </div>
   <div class="row">
     <div class="col-sm-4">
-      <div class="card">
-        <div class="img-container mt-2 mb-3">
+      <div class="card main-card mt-2">
+        <div class="img-container mt-4 mb-3">
           <img src="{{user.photoUrl}}" alt="{{user.knownAs}}" class="img-profile">
         </div>
-        <div class="card-body">
+        <div class="card-body info-body">
           <div>
             <strong>Location: </strong>
             <p>{{user.city}}, {{user?.country}}</p>
@@ -23,10 +28,10 @@
             <p>{{user.created}}</p>
           </div>
         </div>
-        <div class="card-footer">
-          <div class="btn-group btn-group-justified d-flex">
-            <button class="btn btn-secondary w-100">Like</button>
-            <button class="btn btn-info w-100">Message</button>
+        <div class="card-footer info-footer">
+          <div class="btn-group d-flex" role="group">
+            <button class="btn btn-like btn-secondary w-100">Like</button>
+            <button class="btn btn-message btn-info w-100">Message</button>
           </div>
         </div>
       </div>

@@ -11,15 +11,26 @@ body {
   color:#F2F9F7;
 }
 
-p, strong{
+p, label, span, strong{
   color: #5a5a5a;
 }
 
+/* dark text green color: #6CAE9B;*/
+
 /* Styles for tabbed component */
 
-.tab-panel {
-    border: 1px solid #ddd;
+  .tab-panel {
     padding: 10px;
+    border-radius: 4px;
+  }
+
+  .tab-pane {
+    padding:25px;
+  }
+
+  element.style {
+    border: 1px solid #ddd;
+    padding: 20px;
     border-radius: 4px;
   }
 
@@ -27,14 +38,27 @@ p, strong{
     border-bottom: 4px solid rgb(120, 194, 173, .2);
   }
 
+  .nav-tabs .nav-link {
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    background-color: rgb(236, 236, 236);
+    margin-left: 1px;
+  }
+
   .member-tabset > .nav-tabs > li.open > a, .member-tabset > .nav-tabs > li:hover > a {
     border: 0;
-    background: none !important;
+    background-color: rgb(217, 217, 217, .9);
+    color: #333333;
+  }
+
+  .member-tabset > .nav-tabs > li.active > a {
+    border: 0 !important;
+    background-color: rgb(217, 217, 217, .9);
     color: #333333;
   }
 
   .member-tabset > .nav-tabs > li.open > a > i, .member-tabset > .nav-tabs > li:hover > a > i {
-    color: #a6a6a6;
+    color: #a09d9d;
   }
 
   .member-tabset > .nav-tabs > li.open .dropdown-menu, .member-tabset > .nav-tabs > li:hover .dropdown-menu {
@@ -42,13 +66,8 @@ p, strong{
   }
 
   .member-tabset > .nav-tabs > li.active {
-    border-bottom: 4px solid #78C2AD;
+    border-bottom: 3px solid #78C2AD;
     position: relative;
-  }
-
-  .member-tabset > .nav-tabs > li.active > a {
-    border: 0 !important;
-    color: #333333;
   }
 
   .member-tabset > .nav-tabs > li.active > a > i {
@@ -59,6 +78,8 @@ p, strong{
     margin-top: -3px;
     background-color: #fff;
     border: 0;
-    border-top: 1px solid #eee;
+    border: 1px solid #eee;
+    padding:25px;
     padding: 15px 0;
+    border-top-right-radius: 0.4rem;
   }

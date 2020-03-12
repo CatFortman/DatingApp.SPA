@@ -22,6 +22,8 @@ import { MemberDetailComponent } from './members/member-detail/member-detail.com
 import { EncodeUriPipe } from './_pipes/encode-uri-pipe.pipe';
 import { MemberDetailResolver } from './_resolvers/member-detail.resolver';
 import { MemberListResolver } from './_resolvers/member-list.resolver';
+import { MemberEditComponent } from './members/member-edit/member-edit.component';
+import { MemberEditResolver } from './_resolvers/member-edit.resolver';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -45,6 +47,7 @@ export class CustomHammerConfig extends HammerGestureConfig {
       MessagesComponent,
       MemberCardComponent,
       MemberDetailComponent,
+      MemberEditComponent,
       EncodeUriPipe
    ],
    imports: [
@@ -68,6 +71,7 @@ export class CustomHammerConfig extends HammerGestureConfig {
       ErrorInterceptorProvider,
       MemberDetailResolver,
       MemberListResolver,
+      MemberEditResolver,
       { provide: HAMMER_GESTURE_CONFIG, useClass: CustomHammerConfig }
    ],
    bootstrap: [

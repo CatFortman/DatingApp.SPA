@@ -21,14 +21,12 @@
   z-index: 2;
 }
 
-.btn-like {
-  border-top-left-radius: 0.2rem;
-  border-bottom-left-radius: 0.2rem;
+.btn-like{
+  border-radius: inherit;
 }
 
-.btn-message {
-  border-top-right-radius: 0.2rem;
-  border-bottom-right-radius: 0.2rem;
+.btn-message{
+  border-radius: inherit;
 }
 
 .main-card {
@@ -41,8 +39,8 @@
   color: #5a5a5a;
 }
 
-.card-footer {
-  background-color: #FFFFFF;
+.btn-save {
+  border-radius: 0.2rem;
 }
 
 .info-body{
@@ -54,4 +52,5 @@
 .info-footer{
   padding: 10px 0px 0px 0px;
   border-top: none;
+  background-color: #FFFFFF;
 }

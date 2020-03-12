@@ -24,7 +24,7 @@
       </button>
       <ul id="dropdown-animated" *dropdownMenu class="dropdown-menu mt-2"
           role="menu" aria-labelledby="button-animated">
-        <li role="menuitem"><a class="dropdown-item" href="#"><i class="fa fa-user"></i> Edit Profile</a></li>
+        <li role="menuitem"><a class="dropdown-item" [routerLink]="['/member/edit']" ><i class="fa fa-user"></i> Edit Profile</a></li>
         <li role="menuitem"><a class="dropdown-item" (click)="logout()" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
       </ul>
     </div>
