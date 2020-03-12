@@ -3,6 +3,7 @@ import { User } from '../../_models/user';
 import { UserService } from '../../_services/user.service';
 import { AlertifyService } from '../../_services/alertify.service';
 import { ActivatedRoute } from '@angular/router';
+import { Photo } from '../../_models/photo';
 
 @Component({
   selector: 'app-member-detail',
@@ -10,7 +11,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./member-detail.component.css']
 })
 export class MemberDetailComponent implements OnInit {
-
+  galleryPhotos: Photo[];
   user: User;
 
   constructor(private userService: UserService, private alertify: AlertifyService, private route: ActivatedRoute) { }
@@ -19,7 +20,20 @@ export class MemberDetailComponent implements OnInit {
     this.route.data.subscribe(data => {
       this.user = data.user;
     });
+
+    this.galleryPhotos = this.getImages();
   }
+
+  getImages() {
+    let images =  [];
+    for (const photo of this.user.photos) {
+      images.push({
+        photo : photo
+      });
+    }
+    return images;
+  }
+
 
   // members/3
  /*  loadUser() {

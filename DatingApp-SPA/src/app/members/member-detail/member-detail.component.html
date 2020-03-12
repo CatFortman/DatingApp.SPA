@@ -45,7 +45,20 @@
             <p>{{user.interests}}</p>
           </tab>
           <tab heading="Photos">
-            <p>Photos will go here</p>
+          <!--   <div class="card-columns">
+               <div class="card" *ngFor="let item of galleryPhotos">
+                  <img class="card-img-top" [src]="item.url" [alt]="item.description" />
+                  <div class="card-body">
+                    <h5 class="card-title">{{ item. }}</h5>
+                    <p class="card-text"> {{ item.dateAdded | date: "medium" }} </p>
+                    <p class="card-text">{{ item.title }}</p>
+                    <hr>
+                    <p class="card-text">
+                     <small class="text-muted">{{ item.tags }}</small>
+                    </p>
+                   </div>
+                </div>
+            </div> -->
           </tab>
           <tab heading="Messages">
             <p>Messages will go here</p>

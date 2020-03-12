@@ -5,6 +5,16 @@
 @import '../node_modules/alertifyjs/build/css/alertify.min.css';
 @import '../node_modules/alertifyjs/build/css/themes/bootstrap.min.css';
 
+/* Global styles */
+
+body {
+  color:#F2F9F7;
+}
+
+p, strong{
+  color: #5a5a5a;
+}
+
 /* Styles for tabbed component */
 
 .tab-panel {
