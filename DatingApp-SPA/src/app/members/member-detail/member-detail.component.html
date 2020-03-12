@@ -49,12 +49,12 @@
                <div class="card" *ngFor="let item of galleryPhotos">
                   <img class="card-img-top" [src]="item.url" [alt]="item.description" />
                   <div class="card-body">
-                    <h5 class="card-title">{{ item.title }}</h5>
+                    <h5 class="card-title mt-1">{{ item.title }}</h5>
                     <p class="card-text"> {{ item.dateAdded | date: "medium" }} </p>
-                    <p class="card-text">{{ item.title }}</p>
+                    <p class="card-text">{{ item.description }}</p>
                     <hr>
                     <p class="card-text">
-                        <small *ngFor="let tag of item.tags" class="text-muted">{{ tag.tagName }}</small>
+                        <small *ngFor="let tag of item.tags" class="text-muted">{{ tag.tagName }} </small>
                     </p>
                    </div>
                 </div>

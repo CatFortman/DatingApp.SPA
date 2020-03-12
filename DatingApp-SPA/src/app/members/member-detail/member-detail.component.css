@@ -20,6 +20,9 @@
   margin-left: auto;
 }
 
+.card-title {
+  color: #5a5a5a;
+}
 
 .card-body{
   padding: 0 25px;
