@@ -15,7 +15,7 @@
   overflow: hidden;
   border-radius: 50%;
   display: flex;
-  border: 1px solid rgb(120, 194, 173, 0.2);
+  border: 1px solid rgb(120, 194, 173, .8);
   margin-right: auto;
   margin-left: 35px;
   z-index: 2;
@@ -31,7 +31,7 @@
 
 .main-card {
   border: none;
-  background-color: rgb(236, 246, 243);
+  background-color: rgb(218, 242, 234);
   border-radius: inherit;
 }
 
@@ -45,7 +45,7 @@
 
 .info-body{
   padding: 90px 25px 0px 25px;
-  background-color: rgb(236, 236, 236);
+  background-color: rgb(229, 224, 224);
   margin-top: -85px;
 }
 
