@@ -25,11 +25,9 @@ export class MemberDetailComponent implements OnInit {
   }
 
   getImages() {
-    let images =  [];
+    const images =  [];
     for (const photo of this.user.photos) {
-      images.push({
-        photo : photo
-      });
+      images.push(photo);
     }
     return images;
   }

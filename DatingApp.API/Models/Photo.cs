@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace DatingApp.API.Models
 {
@@ -12,5 +13,6 @@ namespace DatingApp.API.Models
         public bool IsMain { get; set; }
         public User User { get; set; }
         public int UserId { get; set; }
+        public ICollection<Tag> Tags { get; set; }
     }
 }
