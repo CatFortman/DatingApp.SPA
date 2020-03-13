@@ -23,7 +23,9 @@
 
 .profile-name
 {
+  font-weight: lighter;
   color: #5a5a5a;
+  margin-right: 35px;
 }
 
 .img-container{
@@ -38,9 +40,11 @@
 }
 
 .btn-group-interactions {
-  width: 35%;;
-  margin-left: -5px;
+  width: 30%;
+  margin-left: -1px;
   margin-right: auto;
+  position: absolute;
+  z-index: 2;
 }
 
 .btn-interaction{
