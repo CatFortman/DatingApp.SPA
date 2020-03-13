@@ -7,15 +7,16 @@
   <div class="row">
     <div class="col-sm-4">
       <div class="card main-card mt-2">
-        <div class="img-container mt-4 mb-1">
+        <div class="btn-group btn-group-interactions mt-3" role="group">
+          <button class="btn btn-like btn-interaction"  onclick="this.blur();"><i class="fa fa-heart member-icon" aria-hidden="true"></i></button>
+          <button class="btn btn-message btn-interaction"  onclick="this.blur();"><i class="fa fa-envelope member-icon" aria-hidden="true"></i></button>
+          <button class="btn btn-share btn-interaction"  onclick="this.blur();"><i class="fa fa-user-plus member-icon"></i></button>
+        </div>
+        <div class="img-container mt-3 mb-1">
           <img src="{{user.photoUrl}}" alt="{{user.knownAs}}" class="img-profile">
         </div>
         <div class="card-body info-body">
-          <div class="btn-group btn-group-interactions mb-4" role="group">
-            <button class="btn btn-like w-100"  onclick="this.blur();"><i class="fa fa-heart member-icon" aria-hidden="true"></i></button>
-            <button class="btn btn-message w-100"  onclick="this.blur();"><i class="fa fa-envelope member-icon" aria-hidden="true"></i></button>
-            <button class="btn btn-star w-100"  onclick="this.blur();"><i class="fa fa-star member-icon"></i></button>
-          </div>
+
           <div>
             <strong>Location: </strong>
             <p>{{user.city}}, {{user?.country}}</p>

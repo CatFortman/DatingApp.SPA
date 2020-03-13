@@ -15,34 +15,47 @@
   overflow: hidden;
   border-radius: 50%;
   display: flex;
-  border: 1px solid rgb(120, 194, 173, .8);
+  box-shadow: -1px 1px 5px 3px #DDDDDD;
   margin-right: auto;
   margin-left: 35px;
   z-index: 2;
 }
 
 .btn-group-interactions {
-  width: 50%;
-  margin-left: 58px;
+  width: 35%;;
+  margin-left: 15px;
   margin-right: auto;
+}
+
+.btn-interaction{
+  margin-left: 2px;
+  margin-right: 2px;
+  transform: scale(1.0, 1.0);
+  transition-duration: 500ms;
+  transition-timing-function: ease-out;
+}
+
+.btn-interaction:hover
+{
+  transform: scale(1.2, 1.2);
+  transition-duration: 500ms;
+  transition-timing-function: ease-out;
+  opacity: 0.7;
 }
 
 .btn-like {
   color:#F3969A;
   padding: 0px;
-  margin:5px;
 }
 
 .btn-message {
   color:rgb(86, 176, 255);
   padding: 0px;
-  margin:5px;
 }
 
-.btn-star {
-  color:rgb(255, 181, 124);
+.btn-share {
+  color:rgb(252, 169, 68);
   padding: 0px;
-  margin:5px;
 }
 
 .member-icon{

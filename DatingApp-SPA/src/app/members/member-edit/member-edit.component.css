@@ -15,18 +15,10 @@
   overflow: hidden;
   border-radius: 50%;
   display: flex;
-  border: 1px solid rgb(120, 194, 173, .8);
+  box-shadow: -1px 1px 5px 3px #DDDDDD;
   margin-right: auto;
   margin-left: 35px;
   z-index: 2;
-}
-
-.btn-like{
-  border-radius: inherit;
-}
-
-.btn-message{
-  border-radius: inherit;
 }
 
 .main-card {
