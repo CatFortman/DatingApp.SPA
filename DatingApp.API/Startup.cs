@@ -2,6 +2,7 @@
 using System.Text;
 using AutoMapper;
 using DatingApp.API.Data;
+using DatingApp.API.Helpers;
 using ExtensionMethods;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -35,6 +36,7 @@ namespace DatingApp.API
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             });
             services.AddCors();
+            services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings"));
             services.AddAutoMapper(typeof(DatingRepository).Assembly);
             services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddScoped<IDatingRepository, DatingRepository>();
