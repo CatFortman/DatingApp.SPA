@@ -1,0 +1,18 @@
+img.img-thumbnail{
+  height: 100px;
+  min-width: 100px !important;
+  margin-bottom: 2px;
+  object-fit: cover;
+}
+
+.upload-select-container, .queue-progress {
+  color: #888;
+}
+
+.nv-file-over {
+  border: dotted 3px red;
+}
+
+input[type=file] {
+  color: transparent;
+}
