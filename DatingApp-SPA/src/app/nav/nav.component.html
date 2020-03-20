@@ -18,6 +18,9 @@
 
     <!--Welcome Dropdown-->
     <div *ngIf="loggedIn()" class="btn-group" dropdown>
+      <span>
+        <img src="{{authService.currentUser.photoUrl}}" alt="">
+      </span>
       <button id="button-animated" dropdownToggle type="button" class="btn welcome-dropdown dropdown-toggle"
               aria-controls="dropdown-animated"  onclick="this.blur();">
               Welcome {{authService.decodedToken?.unique_name | titlecase}} <span class="caret"></span>
