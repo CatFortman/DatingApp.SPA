@@ -2,9 +2,24 @@
  color:white;
 }
 
-img {
-  max-height: 50px;
-  border: 2px solid white;
-  display: inline;
+.img-container{
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
   border-radius: 50%;
+  display: flex;
+  border: 2px solid white;
+  object-fit: cover;
+  z-index: 2;
+}
+
+
+.img-profile {
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
