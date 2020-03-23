@@ -19,7 +19,7 @@
     <!--Welcome Dropdown-->
     <div *ngIf="loggedIn()" class="btn-group" dropdown>
       <div class="img-container">
-        <img src="{{photoUrl}}" class="img-profile" alt="">
+        <img src="{{photoUrl || '../../../../assets/images/user.png'}}" class="img-profile" alt="">
       </div>
       <button id="button-animated" dropdownToggle type="button" class="btn welcome-dropdown dropdown-toggle"
               aria-controls="dropdown-animated"  onclick="this.blur();">

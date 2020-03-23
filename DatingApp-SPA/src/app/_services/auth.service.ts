@@ -36,12 +36,12 @@ export class AuthService {
             this.decodedToken = this.jwtHelper.decodeToken(user.token);
             this.changeMemberPhoto(this.currentUser.photoUrl);
           }
-        })
-      );
+       })
+     );
   }
 
-  register(model: any) {
-    return this.http.post(this.baseUrl + 'register', model);
+  register(user: User) {
+    return this.http.post(this.baseUrl + 'register', user);
   }
 
 
