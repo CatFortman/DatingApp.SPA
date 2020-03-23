@@ -8,7 +8,11 @@
       [disabled]="photo.isMain"
       [ngClass]="photo.isMain? 'btn-primary active' : 'btn-outline-primary' "
       style="color:black">Main</button>
-      <button type="button" class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i></button>
+      <button type="button" class="btn btn-sm btn-danger"
+      (click)="this.deletePhoto(photo.id)"
+      [disabled]="photo.isMain">
+      <i class="fa fa-trash-o"></i>
+    </button>
     </div>
   </div>
 </div>
