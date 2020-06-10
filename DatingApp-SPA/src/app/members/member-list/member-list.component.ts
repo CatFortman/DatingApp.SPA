@@ -26,9 +26,9 @@ export class MemberListComponent implements OnInit {
     });
 
     this.userParams.gender = this.user.interestedIn;
-    console.log(this.user);
     this.userParams.minAge = 18;
     this.userParams.maxAge = 99;
+    this.userParams.orderBy = 'lastActive';
   }
 
   pageChanged(event: any) {
